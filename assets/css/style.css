@@ -1,0 +1,344 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+.container{
+  margin: 0 auto;
+  width: 95%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.link{
+    display: flex;
+    list-style: none;
+    flex-basis: 400px;
+    
+    justify-content: space-evenly;
+    
+}
+
+.hb .nav_link:after {
+    content: '';
+    display: block;
+    margin-bottom: auto;
+    height: 3px;
+
+    
+  }
+  .nav-bar .nav span{
+    margin: 10px;
+  }
+.hb .nav_link:hover:after {
+    width: 100%;
+    background-color:#0065FC;
+    
+  }
+  .hb .nav_link{
+    text-decoration: none;
+    color: gray;
+} 
+.hb .nav_link:hover{
+   color: #0065FC;
+}
+.informations .info{
+    color: gray;
+}
+.logo img{
+    width: 100px;
+}
+.informations{
+    display: flex;
+    align-items: baseline;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.hebergement{
+    margin-bottom: 20px;
+    margin-top: 23px;
+}
+.informations .info{
+    margin: 10px;
+}
+.emplacement{
+    color: gray;
+}
+.recherche{
+    
+    display: flex;
+}
+p.marker{
+    background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    width: 41px;
+    height: 37px;
+    text-align: center;
+    margin-top: 0 ;
+
+}
+i.fas.fa-map-marker-alt{
+    padding-top: 10px;
+}
+.champ{
+    height: 30px;
+}
+.bouton{
+    height: 35px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    border: none;
+    margin-left: -4px;
+}
+i.fas.fa-money-bill-alt{
+background-color: #DEEBFF;
+  
+    border-radius: 30%;
+}
+
+.nav-bar{
+    display: flex;
+        list-style: none;
+        margin-top: 20px;
+}
+.nav a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 32px;
+
+    background-color: #DEEBFF;
+    color: #0065FC;
+
+}
+.nav{
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    padding: 9px 19px 8px 0;
+    margin: 11px 6px 7px 11px;
+
+}
+
+.title_filtre{
+    margin: 20px;
+    font-weight: bold;
+}
+
+.hebergements{
+    display: flex;
+   
+
+}
+.marseille{
+    background-color: #F2F2F2;
+    padding: 32px;
+    border-radius: 12px;
+    flex: 4;
+
+}
+.marseille h3{
+    padding-left: 15px;
+    padding-top: 15px;
+}
+.hebergements-marseille{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  
+}
+.appartement{
+    width: 29%;
+    border-radius: 10px;
+    margin: 16px 16px 2px 16px;
+    background-color: white;
+    border: none;
+   
+  
+}
+.appartement img{
+    width: 97%;
+    margin: 4px;
+    border-radius: 10px 10px 0 0;
+    height: 94px;
+}
+   
+
+.hebergements-title{
+    padding: 5px 0 0 15px;
+    font-weight: bold;
+}
+.prix-nuit{
+    padding: 5px 0 0 15px;
+    color: gray;
+}
+.icon-etoile{
+    padding: 5px 0 8px 15px;
+    color: #0065FC;
+}
+
+.gray.fas.fa-star{
+    color: grey;
+}
+
+.les-plus-populaires{
+    flex: 2;
+    background: #F2F2F2;
+    margin: 0 0 0 15px;
+    border-radius: 10px;
+    padding: 34px;
+}
+.les-plus-populaires .image-p{
+    width: 100px;
+    height: 127px;
+    border-radius: 10px 0 0 10px;
+    margin: 3px;
+}
+.populaires{
+    display: flex;
+  
+    margin: 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.texte-populaires{
+    margin: 28px;
+}
+.prix-nuit-p{
+    color: gray;
+    padding-top: 10px;
+}
+.icon-etoile-p{
+    color: #0065FC;
+    position: relative;
+    top: 28px;
+    left: 10px;
+}
+.title-p{
+    font-weight: bold;
+}
+
+.activite{
+    display: flex;
+}
+.vieux_port{
+    margin: 38px;
+}
+.titre_ac_p{
+    position: relative;
+    top: 30px;
+    left: 33px;
+    font-size: 20px;
+}
+.vieux_port img{
+    width: 289px;
+    height: 368px;
+    
+    border-radius: 10px;
+    box-shadow: 0px 0 5px 1px rgb(0 0 0 / 33%);
+}
+.text_activites{
+    position: relative;
+    bottom: 49px;
+    
+    background-color: white;
+    height: 30px;
+    border-radius: 0 0 10px 10px;
+    
+   
+    padding-left: 15px;
+  
+    padding-top: 15px;
+}
+
+
+.deux_images{
+    display: flex;
+    flex-direction: column;
+}
+.deux_images .img_medium{
+    width: 250px;
+    height: 174px;
+    border-radius: 10px;
+    box-shadow: 0px 0 4px 0px rgb(0 0 0 / 33%);
+    margin-top: 40px;
+} 
+.deux_images .img_small{
+    width: 250px;
+    height: 150px;
+        border-radius: 10px;
+        margin-top: -6px;
+
+    box-shadow: 0px 0 4px 0px rgb(0 0 0 / 33%);
+}
+.deux_images .paysages{
+    width: 250px;
+    height: 160px;
+border-radius: 10px;
+    box-shadow: 0px 0 4px 0px rgb(0 0 0 / 33%);
+    margin-top: 37px;
+}
+.deux_images .paysages_deux{
+    width: 250px;
+    height: 160px;
+border-radius: 10px;
+    box-shadow: 0px 0 4px 0px rgb(0 0 0 / 33%);
+    margin-top: 3px;
+}
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 342px 0 65px 
+}
+.titre_aide{
+    font-weight: bold;
+}
+p.aide a{
+    color: gray;
+    text-decoration: none;
+    
+}
+@media screen and (max-width: 500px){
+    
+    .filtres .nav-bar{
+        display: inline-block;
+    }
+    .hebergements{
+       flex-direction: column-reverse;
+        margin: 0;
+    }
+    .appartement{
+        width: 100%;
+    }
+    .les-plus-populaires {
+        padding: 11px;
+    }
+    h4 .fas.fa-star{
+        padding-left: 107px;
+    }
+    .activite{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer{
+        flex-wrap: wrap;
+    }
+    
+}
