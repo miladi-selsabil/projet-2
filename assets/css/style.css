@@ -1,25 +1,9 @@
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-	padding: 0;
-	border: 0;
-	vertical-align: baseline;
-}
+
 .container{
   margin: 0 auto;
   width: 95%;
+  font-family: 'Raleway', sans-serif;
 }
 .menu{
     display: flex;
@@ -38,7 +22,7 @@ time, mark, audio, video {
 .hb .nav_link:after {
     content: '';
     display: block;
-    margin-bottom: auto;
+    margin-top: -36px;
     height: 3px;
 
     
@@ -88,16 +72,18 @@ p.marker{
     background-color: #F2F2F2;
     border-radius: 10px 0 0 10px;
     width: 41px;
-    height: 37px;
+    height: 39px;
     text-align: center;
-    margin-top: 0 ;
+    margin-top: -2px ;
 
 }
 i.fas.fa-map-marker-alt{
     padding-top: 10px;
 }
 .champ{
-    height: 30px;
+    height: 33px;
+    outline: 2px solid #f2f2f2;
+    border: none;
 }
 .bouton{
     height: 35px;
@@ -147,14 +133,15 @@ background-color: #DEEBFF;
 }
 .marseille{
     background-color: #F2F2F2;
-    padding: 32px;
+ 
     border-radius: 12px;
     flex: 4;
 
 }
 .marseille h3{
-    padding-left: 15px;
-    padding-top: 15px;
+    padding-left: 26px;
+    padding-top: 31px;
+
 }
 .hebergements-marseille{
     display: flex;
@@ -176,7 +163,7 @@ background-color: #DEEBFF;
     width: 97%;
     margin: 4px;
     border-radius: 10px 10px 0 0;
-    height: 94px;
+    height: 132px;
 }
    
 
@@ -205,7 +192,7 @@ background-color: #DEEBFF;
     padding: 34px;
 }
 .les-plus-populaires .image-p{
-    width: 100px;
+    width: 150px;
     height: 127px;
     border-radius: 10px 0 0 10px;
     margin: 3px;
@@ -213,12 +200,13 @@ background-color: #DEEBFF;
 .populaires{
     display: flex;
   
-    margin: 10px;
+    margin: 20px;
     border-radius: 10px;
     background-color: white;
 }
-.texte-populaires{
-    margin: 28px;
+.texte-populaires {
+    margin: 10px;
+    position: relative;
 }
 .prix-nuit-p{
     color: gray;
@@ -226,9 +214,8 @@ background-color: #DEEBFF;
 }
 .icon-etoile-p{
     color: #0065FC;
-    position: relative;
-    top: 28px;
-    left: 10px;
+    position: absolute;
+    top: 101px;
 }
 .title-p{
     font-weight: bold;
@@ -236,9 +223,11 @@ background-color: #DEEBFF;
 
 .activite{
     display: flex;
+    justify-content: space-around;
 }
 .vieux_port{
     margin: 38px;
+    position: relative;
 }
 .titre_ac_p{
     position: relative;
@@ -254,23 +243,26 @@ background-color: #DEEBFF;
     box-shadow: 0px 0 5px 1px rgb(0 0 0 / 33%);
 }
 .text_activites{
-    position: relative;
-    bottom: 49px;
-    
+    position: absolute;
+    bottom: 4px;
     background-color: white;
-    height: 30px;
+    height: 31px;
     border-radius: 0 0 10px 10px;
-    
-   
     padding-left: 15px;
-  
     padding-top: 15px;
+    width: 95%;
 }
 
 
 .deux_images{
     display: flex;
     flex-direction: column;
+}
+.deux_images .medium{
+    position: relative;
+}
+.deux_images .small{
+    position: relative;
 }
 .deux_images .img_medium{
     width: 250px;
@@ -282,10 +274,15 @@ background-color: #DEEBFF;
 .deux_images .img_small{
     width: 250px;
     height: 150px;
-        border-radius: 10px;
-        margin-top: -6px;
-
+    border-radius: 10px;
+    margin-top: 32px;
     box-shadow: 0px 0 4px 0px rgb(0 0 0 / 33%);
+}
+.deux_images .pay{
+    position: relative;
+}
+.deux_images .pay-deux{
+    position: relative;
 }
 .deux_images .paysages{
     width: 250px;
@@ -297,15 +294,13 @@ border-radius: 10px;
 .deux_images .paysages_deux{
     width: 250px;
     height: 160px;
-border-radius: 10px;
+    border-radius: 10px;
     box-shadow: 0px 0 4px 0px rgb(0 0 0 / 33%);
-    margin-top: 3px;
+    margin-top: 43px;
 }
-footer{
-    background-color: #F2F2F2;
-    display: flex;
-    justify-content: space-between;
-    padding: 24px 342px 0 65px 
+
+.propos, .hebergements_aide, .Assistance {
+    line-height: 25px;
 }
 .titre_aide{
     font-weight: bold;
@@ -315,11 +310,43 @@ p.aide a{
     text-decoration: none;
     
 }
+footer{
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 342px 0 65px 
+}
+@media screen and (max-width: 900px){
+.hebergements{
+    display: block;
+}
+}
+
+
 @media screen and (max-width: 500px){
     
-    .filtres .nav-bar{
-        display: inline-block;
+.menu{
+    display: block;
+}
+.logo img{
+    margin-left: 37%;
+}
+.link{
+    display: flex;
+    justify-content: space-between;
+}
+.activite{
+    flex-wrap: wrap;
+}
+ .section_un .hebergement .info_h{
+        margin-top: 51px;
     }
+   
+    .nav-bar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
     .hebergements{
        flex-direction: column-reverse;
         margin: 0;
@@ -327,18 +354,49 @@ p.aide a{
     .appartement{
         width: 100%;
     }
+    .appartement img {
+        height: 220px;
+    }
+
     .les-plus-populaires {
         padding: 11px;
     }
-    h4 .fas.fa-star{
-        padding-left: 107px;
+    .populaires{
+        margin: 0;
+        margin-top: 30px;
     }
+    .les-plus-populaires h4{
+        font-size: 15px;
+    }
+    
     .activite{
         flex-wrap: wrap;
         justify-content: center;
     }
-    footer{
-        flex-wrap: wrap;
+    .vieux_port img{
+        width: 275px;
+        height: 171px;
+    }
+    .deux_images .img_medium{
+        width: 275px;
+        height: 171px;
     }
     
+    .deux_images .img_small{
+        width: 275px;
+        height: 171px;
+    }
+    .deux_images .paysages {
+        width: 275px;
+        height: 171px;
+    }
+    .deux_images .paysages_deux{
+        width: 275px;
+        height: 171px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 56px;
+    }
 }
