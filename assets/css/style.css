@@ -28,7 +28,7 @@
     
   }
   .nav-bar .nav span{
-    margin: 10px;
+    margin: 3px;
   }
 .hb .nav_link:hover:after {
     width: 100%;
@@ -113,6 +113,11 @@ background-color: #DEEBFF;
     color: #0065FC;
 
 }
+.nav:hover{
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+}
 .nav{
     border: 2px solid #F2F2F2;
     border-radius: 20px;
@@ -140,7 +145,7 @@ background-color: #DEEBFF;
 }
 .marseille h3{
     padding-left: 26px;
-    padding-top: 31px;
+    padding-top: 16px;
 
 }
 .hebergements-marseille{
@@ -240,7 +245,8 @@ background-color: #DEEBFF;
     height: 368px;
     
     border-radius: 10px;
-    box-shadow: 0px 0 5px 1px rgb(0 0 0 / 33%);
+    box-shadow: 2px 0 19px 2px rgb(0 0 0 / 15%);
+
 }
 .text_activites{
     position: absolute;
@@ -310,7 +316,7 @@ p.aide a{
     text-decoration: none;
     
 }
-footer{
+footer.footer{
     background-color: #F2F2F2;
     display: flex;
     justify-content: space-between;
@@ -331,10 +337,7 @@ footer{
 .logo img{
     margin-left: 37%;
 }
-.link{
-    display: flex;
-    justify-content: space-between;
-}
+
 .activite{
     flex-wrap: wrap;
 }
@@ -348,11 +351,16 @@ footer{
     }
     
     .hebergements{
-       flex-direction: column-reverse;
-        margin: 0;
+      display: flex;
+      flex-wrap: wrap-reverse;
+    
+    }
+    .hebergements .marseille{
+        background-color: #fff;
     }
     .appartement{
         width: 100%;
+        box-shadow: 2px 0 19px 2px rgb(0 0 0 / 15%);
     }
     .appartement img {
         height: 220px;
@@ -373,30 +381,44 @@ footer{
         flex-wrap: wrap;
         justify-content: center;
     }
+    .vieux_port {
+        margin: 0;
+    }
     .vieux_port img{
-        width: 275px;
-        height: 171px;
+        width: 330px;
+        height: 200px;
     }
     .deux_images .img_medium{
-        width: 275px;
-        height: 171px;
+        width: 330px;
+        height: 200px;
     }
     
     .deux_images .img_small{
-        width: 275px;
-        height: 171px;
+        width: 330px;
+        height: 200px;
     }
     .deux_images .paysages {
-        width: 275px;
-        height: 171px;
+        width: 330px;
+        height: 200px;
     }
     .deux_images .paysages_deux{
-        width: 275px;
-        height: 171px;
+        width: 330px;
+        height: 200px;
+    }
+    .text_activites{
+        width: 315px;
     }
     footer{
         display: flex;
         flex-direction: column;
         padding-left: 56px;
+    }
+    footer.footer{
+    padding: 35px 0 68px 39px;
+    margin-top: 50px;
+}
+    .propos, .hebergements_aide, .Assistance {
+        line-height: 32px;
+        margin: 15px;
     }
 }
