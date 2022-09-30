@@ -14,9 +14,16 @@
     display: flex;
     list-style: none;
     flex-basis: 400px;
-    
+  
     justify-content: space-evenly;
     
+}
+.filtres{
+    display: flex;
+}
+.title_filtre{
+    margin: 38px 21px 0px 15px;
+    font-weight: bold;
 }
 
 .hb .nav_link:after {
@@ -127,7 +134,7 @@ background-color: #DEEBFF;
 }
 
 .title_filtre{
-    margin: 20px;
+    margin: 38px 0px 0px 15px;
     font-weight: bold;
 }
 
@@ -196,6 +203,9 @@ background-color: #DEEBFF;
     border-radius: 10px;
     padding: 34px;
 }
+.les-plus-populaires .fas.fa-star.e{
+    padding-left: 141px;
+}
 .les-plus-populaires .image-p{
     width: 150px;
     height: 127px;
@@ -226,6 +236,13 @@ background-color: #DEEBFF;
     font-weight: bold;
 }
 
+.activites_a_marseille{
+    margin-top: 50px;
+}
+.titre_activites{
+    font-size: 20px;
+    margin-left: 23px;
+}
 .activite{
     display: flex;
     justify-content: space-around;
@@ -234,12 +251,7 @@ background-color: #DEEBFF;
     margin: 38px;
     position: relative;
 }
-.titre_ac_p{
-    position: relative;
-    top: 30px;
-    left: 33px;
-    font-size: 20px;
-}
+
 .vieux_port img{
     width: 289px;
     height: 368px;
@@ -322,9 +334,21 @@ footer.footer{
     justify-content: space-between;
     padding: 24px 342px 0 65px 
 }
-@media screen and (max-width: 900px){
+@media screen and (max-width: 800px){
 .hebergements{
     display: block;
+}
+.les-plus-populaires{
+    margin: 50px 0px 0px 0px;
+}
+.les-plus-populaires .fas.fa-star.e {
+    padding-left: 357px;
+}
+.activite{
+    flex-wrap: wrap;
+}
+footer.footer{
+    padding: 24px 80px 0 71px;
 }
 }
 
@@ -341,19 +365,40 @@ footer.footer{
 .activite{
     flex-wrap: wrap;
 }
- .section_un .hebergement .info_h{
-        margin-top: 51px;
-    }
-   
-    .nav-bar{
+
+ .filtres{
+    display: block;
+ }  
+.nav-bar{
         display: flex;
         flex-wrap: wrap;
+        max-width: 84%;
+}
+.section_un .hebergement{
+    margin-top: 0px;
+}
+.section_un .hebergement .info-h{
+        margin-top: 20px;
+        font-size: 23px;
+        margin-left: 15px;
+}
+.section_un .hebergement .emplacement{
+        margin-left: 15px;
+        color: black;
+        margin-top: 15px;
+    }
+    .link{
+        margin-top: 15px;
+        justify-content: space-around;
     }
     
     .hebergements{
       display: flex;
       flex-wrap: wrap-reverse;
     
+    }
+    .hb .nav_link:after{
+        margin-top: 15px;
     }
     .hebergements .marseille{
         background-color: #fff;
@@ -362,12 +407,17 @@ footer.footer{
         width: 100%;
         box-shadow: 2px 0 19px 2px rgb(0 0 0 / 15%);
     }
-    .appartement img {
+    /*.appartement img 
         height: 220px;
-    }
+    }*/
+
 
     .les-plus-populaires {
         padding: 11px;
+        margin: 0;
+    }
+    .les-plus-populaires .fas.fa-star.e{
+        padding-left: 100px;
     }
     .populaires{
         margin: 0;
@@ -387,23 +437,29 @@ footer.footer{
     .vieux_port img{
         width: 330px;
         height: 200px;
+        margin-top: 16px;
     }
+
     .deux_images .img_medium{
         width: 330px;
         height: 200px;
+        margin-top: 16px;
     }
     
     .deux_images .img_small{
         width: 330px;
         height: 200px;
+        margin-top: 16px;
     }
     .deux_images .paysages {
         width: 330px;
         height: 200px;
+        margin-top: 16px;
     }
     .deux_images .paysages_deux{
         width: 330px;
         height: 200px;
+        margin-top: 16px;
     }
     .text_activites{
         width: 315px;
@@ -414,8 +470,8 @@ footer.footer{
         padding-left: 56px;
     }
     footer.footer{
-    padding: 35px 0 68px 39px;
-    margin-top: 50px;
+    padding: 17px 0px 0px 10px;
+    margin-top: 40px;
 }
     .propos, .hebergements_aide, .Assistance {
         line-height: 32px;
