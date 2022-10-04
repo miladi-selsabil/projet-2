@@ -65,6 +65,9 @@
     margin-bottom: 20px;
     margin-top: 23px;
 }
+.hebergement .info-h{
+    margin-bottom: 12px;
+}
 .informations .info{
     margin: 10px;
 }
@@ -201,7 +204,7 @@ background-color: #DEEBFF;
     background: #F2F2F2;
     margin: 0 0 0 15px;
     border-radius: 10px;
-    padding: 34px;
+    padding: 20px;
 }
 
 .les-plus-populaires .image-p{
@@ -213,7 +216,7 @@ background-color: #DEEBFF;
 .populaires{
     display: flex;
   
-    margin: 20px;
+    margin-top: 20px;
     border-radius: 10px;
     background-color: white;
 }
@@ -251,13 +254,13 @@ background-color: #DEEBFF;
     justify-content: space-around;
 }
 .vieux_port{
-    margin: 38px 20px 38px 20px;
+    margin: 38px 10px 38px 10px;
     position: relative;
 }
 
 .vieux_port img{
-    width: 289px;
-    height: 368px;
+    width: 240px;
+    height: 350px;
     
     border-radius: 10px;
     box-shadow: 2px 0 19px 2px rgb(0 0 0 / 15%);
@@ -271,7 +274,7 @@ background-color: #DEEBFF;
     border-radius: 0 0 10px 10px;
     padding-left: 15px;
     padding-top: 15px;
-    width: 95%;
+    width: 94%;
 }
 
 
@@ -296,7 +299,7 @@ background-color: #DEEBFF;
     width: 250px;
     height: 150px;
     border-radius: 10px;
-    margin-top: 32px;
+    margin-top: 18px;
     box-shadow: 0px 0 4px 0px rgb(0 0 0 / 33%);
 }
 .deux_images .pay{
@@ -317,7 +320,7 @@ border-radius: 10px;
     height: 160px;
     border-radius: 10px;
     box-shadow: 0px 0 4px 0px rgb(0 0 0 / 33%);
-    margin-top: 43px;
+    margin-top: 26px;
 }
 
 .propos, .hebergements_aide, .Assistance {
@@ -337,7 +340,7 @@ footer.footer{
     justify-content: space-between;
     padding: 24px 342px 0 65px 
 }
-@media screen and (max-width: 992px){
+@media screen and (max-width: 996px){
 .hebergements{
     display: block;
 }
@@ -363,9 +366,7 @@ footer.footer{
     margin-left: 37%;
 }
 
-.activite{
-    flex-wrap: wrap;
-}
+
 
  .filtres{
     display: block;
@@ -395,7 +396,7 @@ footer.footer{
     
     .hebergements{
       display: flex;
-      flex-wrap: wrap-reverse;
+      flex-direction: column-reverse;
     
     }
     .hb .nav_link:after{
@@ -405,14 +406,19 @@ footer.footer{
         background-color: #fff;
     }
     .appartement{
-        width: 100%;
+        width: 86%;
         box-shadow: 2px 0 19px 2px rgb(0 0 0 / 15%);
     }
     /*.appartement img 
         height: 220px;
     }*/
+    .appartement img {
+        width: 97%;
+        margin: 7px;
+     
+        height: 200px;
 
-
+    }
     .les-plus-populaires {
         padding: 11px;
         margin: 0;
@@ -427,10 +433,13 @@ footer.footer{
     .les-plus-populaires h4{
         font-size: 15px;
     }
+    .texte-populaires {
+        margin: 0;
+    }
     
     .activite{
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .vieux_port {
         margin: 0;
