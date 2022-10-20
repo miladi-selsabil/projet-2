@@ -1,10 +1,12 @@
 
 
+.container, .footer{
+    font-family: 'Raleway', sans-serif;
+  }
 .container{
-  margin: 0 auto;
-  width: 95%;
-  font-family: 'Raleway', sans-serif;
-}
+    margin: 0 auto;
+    width: 95%;
+  }
 .menu{
     display: flex;
     justify-content: space-between;
@@ -17,6 +19,9 @@
   
     justify-content: space-evenly;
     
+}
+.search{
+ display: none;
 }
 .filtres{
     display: flex;
@@ -366,7 +371,18 @@ footer.footer{
     margin-left: 37%;
 }
 
-
+.bouton{
+   display: none;
+}
+.search{
+    display: inline;
+    background: #0065FC;
+    color: white;
+    padding: 9px;
+    border-radius: 12px;
+    position: relative;
+    right: 17px;
+}
 
  .filtres{
     display: block;
@@ -436,7 +452,9 @@ footer.footer{
     .texte-populaires {
         margin: 0;
     }
-    
+    .activites_a_marseille{
+        margin-bottom: 50px;
+    }
     .activite{
         flex-direction: column;
         align-items: center;
